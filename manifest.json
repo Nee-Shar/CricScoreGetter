@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Live India Cricket Match Store",
+  "version": "1.0",
+  "description": "A web extension to view live India cricket match data",
+  "icons": {
+    "48": "cric48.png",
+    "128": "cric128.png"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "48": "cric48.png",
+      "128": "cric128.png"
+    }
+  },
+  "permissions": ["activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "web_accessible_resources": [
+    {
+      "resources": ["index.html", "app.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
